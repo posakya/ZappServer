@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 } 
 
 $data = [];
-$sql = "SELECT * FROM cart";
+$sql = "SELECT Iname,Price FROM cart";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
